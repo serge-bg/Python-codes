@@ -15,27 +15,28 @@
 
 # Operation
 # Main program to prompt user for their age
-try:
+
+try: 
     user_age = int(input("Please enter your age as an integer: \t"))
     
     # Categorize based on the input
     if user_age < 0 or user_age > 150:
-        stage = "Invalid age! Please enter a realistic age between 0 and 150."
+        life_stage = "Invalid age! Please enter a realistic age between 0 and 150."
     elif user_age <= 1:
-        stage = "INFANT"
+        life_stage = "INFANT"
     elif 2 <= user_age <= 3:
-        stage = "Toddler"
+        life_stage = "Toddler"
     elif 4 <= user_age <= 12:
-        stage = "Child"
+        life_stage = "Child"
     elif 13 <= user_age <= 19:
-        stage = "Teenager"
+        life_stage = "Teenager"
     elif 20 <= user_age <= 64:
-        stage = "Adult"
+        life_stage = "Adult"
     else:
-        stage = "Senior"
+        life_stage = "Senior"
     
     # Print the life stage
-    print(f"Based on your age, you are categorized as: {stage}")
+    print(f"Based on your age, you are categorized as: {life_stage}")
     
 except ValueError:
     print("Invalid input! Please enter a valid integer for your age.")
