@@ -7,11 +7,17 @@
 # Your number user_number is even/odd.
 
 #Operation
-# asking the user to privide a number
-user_number = int(input("enter you choosen number between 1 - 100:\t"))
-# Checking if the user-number is even or odd
-if user_number % 2 == 0:
-        print(f"Your number {user_number} is even.")
+# Asking the user to provide a number
+# Asking the user to provide a number
+user_number = int(input("Enter your chosen number between 1 - 100:\t"))
 
+# Checking if the user-number is within the valid range
+if user_number < 1 or user_number > 100:
+    print("Invalid input! Please enter a number between 1 and 100.")
+
+elif user_number % 2 == 0:
+        print(f"Your number {user_number} is EVEN.")
 else:
-        print("Invalid input! Please enter a number between 1 and 100") 
+    if user_number % 2 != 0:
+        print(f"Your number {user_number} is ODD.")
+
