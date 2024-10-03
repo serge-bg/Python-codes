@@ -13,6 +13,7 @@
 
 # OPERATION
 
+   ## OPTION 1
 # List of number list
 number_list = [
     [3, 4, 5, 6],       # Expected Output: 6 3
@@ -28,4 +29,16 @@ for my_list in number_list:
     else:
         print(max(my_list), min(my_list))
 
+
+  ## OPTION 2
+
+lists = [[3,4,5,6], [-1,-2,-3,-4], [0,0,0,0], []]  # List of lists
+
+for sublist in lists:
+    if len(sublist) == 0:
+        print("None")
+    else:
+        largest = max(sublist)
+        smallest = min(sublist)
+        print(f"{largest} {smallest}")
 
