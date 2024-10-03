@@ -18,6 +18,5 @@ if user_number < 1 or user_number > 100:
 elif user_number % 2 == 0:
         print(f"Your number {user_number} is EVEN.")
 else:
-    if user_number % 2 != 0:
         print(f"Your number {user_number} is ODD.")
 
