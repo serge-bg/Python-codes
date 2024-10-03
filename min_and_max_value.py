@@ -21,7 +21,7 @@ number_list = [
     []                  # Expected Output: None
 ]
 
-# Loop through each test case
+# Loop through each number list
 for my_list in number_list:
     if len(my_list) == 0:
         print("None")
